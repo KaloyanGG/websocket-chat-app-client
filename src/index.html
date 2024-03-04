@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        var username = localStorage.getItem('username');
+        if (username) {
+            window.location.href = "chat.html";
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="utils/utils.js"></script>
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <input id="username" type="text" placeholder="Enter username">
+    <a href="index.html" id="go-to-index" onclick="
+        let username = $('#username').val();
+        localStorage.setItem('username', username);
+        ">Login</a> -->
+
+    <input type="text" id="username" placeholder="Enter username">
+    <a href="chat.html" onclick="saveUsername()">Submit</a>
+
+    <script>
+        function saveUsername() {
+            var username = document.getElementById("username").value;
+            localStorage.setItem("username", username);
+        }
+
+        // window.onload = function () {
+        //     var username = localStorage.getItem('username');
+        //     if (username) {
+        //         window.location.href = "chat.html";  // if the user is already logged in go to main page
+        //     }
+        //     // if the user is not logged, do nothing and remain on the login page
+        // }
+    </script>
+
+</body>
+
+</html>

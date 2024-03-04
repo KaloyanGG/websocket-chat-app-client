@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        var username = localStorage.getItem('username');
+        if (!username) {
+            window.location.href = "index.html";
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="utils/utils.js"></script>
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <section id="message-section">
+        <ul id="list-of-messages">
+            <li>
+                Hi there!
+            </li>
+            <li class="me">
+                Damn, mimi wtf...
+            </li>
+            <li>
+                idkk broo
+            </li>
+            <li>
+                Hi there! Brat ne znam kwo iskash ot mene chesto twa iskam da e dulgichuk text basi
+            </li>
+            <li>
+                Damn, mimi wtf...
+            </li>
+            <li>
+                idkk broo
+            </li>
+            <li>
+                Hi there!
+            </li>
+            <li class="me">
+                Damn, mimi wtf...asdfs twa sushto iskam da e dosta po dulug text za da vidq kaksh izlgejda na poveche ot
+                1 red
+            </li>
+            <li>
+                idkk broo
+            </li>
+            <li>
+                Hi there!
+            </li>
+            <li>
+                Damn, mimi wtf...
+            </li>
+            <li>
+                idkk broo
+            </li>
+        </ul>
+    </section>
+    <section id="send-message">
+        <input type="text" placeholder="Type a message">
+        <button type="button">Send</button>
+    </section>
+
+
+</body>
+
+</html>
