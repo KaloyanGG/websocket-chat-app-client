@@ -38,23 +38,32 @@ body {
           background-color: seashell;
           align-self: flex-start;
           margin-left: 2vw;
-
         }
       }
     }
   }
 
-  #send-message {
+  form {
     height: 17.5%;
-    display: flex;
     padding: 2vh 5vw;
+    display: flex;
     gap: 5%;
-    /* justify-content: space-between; */
     & > input {
       flex: 1;
+      height: 100%;
     }
     & > button {
+      height: 100%;
       flex: 0.2;
     }
   }
 }
+
+#button-logout{
+  position: absolute;
+  right: 1vw;
+  top: 1vh;
+  font-size: 0.5em;
+  height: 4vh;
+}
+
