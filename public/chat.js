@@ -5,9 +5,14 @@ const inputMessage = document.querySelector('#input-message');
 
 // scrollToBottomOfElement(ulMessages);
 
-let ws = new WebSocket('ws://localhost:8081');
+// let ws = new WebSocket('ws://localhost:8081');
+let ws = new WebSocket('ws://172.20.10.2:8081');
 
 configureTheWebSocket(ws);
+
+// setTimeout(()=>{
+//     alert(ws.onmessage);
+// },2000)
 
 const form = document.querySelector('#message-form');
 
