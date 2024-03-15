@@ -1,9 +1,9 @@
 /* default: font-size: 16px; */
 body {
+  position: fixed;
   font-size: 24px;
-  height: 100vh;
+  height: 100svh;
   width: 100vw;
-
   padding: 0 7.5%;
 
   > * {
@@ -21,8 +21,6 @@ body {
       gap: 2vh;
 
       li {
-        /* height: 7vh; */
-        /* line-height: 7vh; */
         border-radius: 20px;
         padding: 10px;
         max-width: 70%;
@@ -59,7 +57,7 @@ body {
   }
 }
 
-#button-logout{
+#button-logout {
   position: absolute;
   right: 1vw;
   top: 1vh;
@@ -67,3 +65,8 @@ body {
   height: 4vh;
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}

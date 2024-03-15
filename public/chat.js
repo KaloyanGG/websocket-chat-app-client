@@ -1,18 +1,15 @@
-
 const ulMessages = document.querySelector('#list-of-messages');
 const buttonSend = document.querySelector('#button-send');
 const inputMessage = document.querySelector('#input-message');
 
-// scrollToBottomOfElement(ulMessages);
+console.log(document.querySelector('body').scrollHeight)
 
-// let ws = new WebSocket('ws://localhost:8081');
-let ws = new WebSocket('ws://172.20.10.2:8081');
+// const WEB_SOCKET_URL = 'ws://localhost:3000';
+const WEB_SOCKET_URL = 'ws://172.20.10.2:3000';
+
+let ws = new WebSocket(WEB_SOCKET_URL);
 
 configureTheWebSocket(ws);
-
-// setTimeout(()=>{
-//     alert(ws.onmessage);
-// },2000)
 
 const form = document.querySelector('#message-form');
 
