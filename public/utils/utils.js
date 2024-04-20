@@ -13,7 +13,7 @@ function getUsernameFromLocalStorage() {
     return localStorage.getItem('username');
 }
 
-function configureTheWebSocket(ws) {
+function configureWebSocket(ws) {
 
     ws.onopen = () => {
         ws.send(JSON.stringify({ initial: true }));
@@ -40,7 +40,9 @@ function configureTheWebSocket(ws) {
     };
 
     ws.onclose = () => {
-        console.log('WebSocket closed');
+        alert('WebSocket closed...');
+        localStorage.removeItem('username');
+        location.reload();
     }
 }
 
